@@ -149,7 +149,7 @@ private static void ask() throws SQLException {
                     display();
                     break;
                 case 2:
-                    System.out.println("Enter new Firstname");
+                    System.out.println("Enter new Lastname");
                     String lastname = scanner.next();
                     if(lastname == res.getString("lastname")){
                         System.out.println("Enter different name");
