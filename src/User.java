@@ -1,11 +1,9 @@
 public class User {
-    private int uId;
     private String names;
-    private float amount;
-    public User(String names, float amount){
-      this.uId = genereateUniqueId();
+    private String email;
+    public User(String names, String email){
       this.names = names;
-      this.amount = amount;
+      this.email = email;
     }
 
     int genereateUniqueId(){
@@ -13,13 +11,7 @@ public class User {
      return uniqueId;
     }
 
-    public int getuId() {
-        return uId;
-    }
 
-    public void setuId(int uId) {
-        this.uId = uId;
-    }
 
     public String getNames() {
         return names;
@@ -29,11 +21,4 @@ public class User {
         this.names = names;
     }
 
-    public float getAmount() {
-        return amount;
-    }
-
-    public void setAmount(float amount) {
-        this.amount = amount;
-    }
 }
